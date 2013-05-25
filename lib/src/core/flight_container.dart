@@ -88,8 +88,8 @@ class Flight{
   Flight.named(this.name, {bool root : true}){}
 
   /// Convenience method to register singletons enforced by the context
-  void singleton(type, Function constructor, [Function injector] ){
-    if (?injector){
+  void singleton(type, Function constructor, [Function injector = null] ){
+    if (injector != null){
       register(type, constructor, singleton : true, injector : injector);
     } else {
       register(type, constructor, singleton : true);
@@ -107,8 +107,8 @@ class Flight{
   
   
   /// Convenience method to register object prototypes by the context
-  void protoype(type, Function constructor, [Function injector] ){
-    if (?injector){
+  void prototype(type, Function constructor, [Function injector = null] ){
+    if (injector!=null){
       register(type, constructor, singleton : false, injector : injector);
     } else {
       register(type, constructor, singleton : false);
@@ -120,7 +120,7 @@ class Flight{
   ///
   /// Recommended is to use lower case keys or classnames.
   /// 
-  void register(type, Function constructor, {bool singleton : true, Function injector}){
+  void register(type, Function constructor, {bool singleton : true, Function injector : null}){
     //print(type.toString());
     Instantiator inst;
     if (!cache.containsKey(type.toString())){
@@ -129,7 +129,7 @@ class Flight{
       _setInstantiatorHook(inst);
       cache[type.toString()] = inst;
     }
-    if (?injector){
+    if (injector != null){
       inst.initializer=injector;
     }
   }
@@ -143,7 +143,7 @@ class Flight{
   }
   
   void _setInstantiatorHook(Instantiator inst){
-    if (_instantiatorHook!=null){
+    if (_instantiatorHook != null){
       inst._instantiatorHook = _instantiatorHook;
     }
   }
