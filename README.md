@@ -1,5 +1,5 @@
 Dart Flight
-======
+========
 
 Dart Framework Light - an approach to a most basic IOC framework to faciliate dart projects.
 
@@ -22,7 +22,7 @@ Well, though i am pretty fond of the factory and named constructors and what the
 make a design pattern like IOC obsolete. I rather look for ways to integrate the options into IOC.
 That said, i still wait for a decisive answer on HOW factory constructors are the solution to everything IOC is aiming at.
 
-Well, what ist that IOC is aiming at anyways?
+Well, what is it that IOC is aiming at anyways?
 -----------------------------
 
 Can't give a final answer to that without sounding religous, but THIS framework aims at providing a central point in projects to configure the wireup of classes, in mid to long term providing aid
