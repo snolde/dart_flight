@@ -8,7 +8,7 @@ Disambiguation: Flight refers to dart flight, not to a bird's flight, and it has
 
 Credits
 --------
-My work on this project is kindly supported by [i-edit Inc.]{i-edit.ca}.
+My work on this project is kindly supported by [i-edit Inc.]{http://i-edit.ca/}.
 
 
 Introduction
