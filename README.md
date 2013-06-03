@@ -6,6 +6,11 @@ Dart Framework Light - an approach to a most basic IOC framework to faciliate da
 Disambiguation: Flight refers to dart flight, not to a bird's flight, and it has no connection whatsoever to the Twitter Flight framework. 
 
 
+Credits
+--------
+My work on this project is kindly supported by [i-edit Inc.]{i-edit.ca}.
+
+
 Introduction
 ------------
 
